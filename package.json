@@ -1,0 +1,12 @@
+{
+  "name": "linter_configs",
+  "version": "1.0.0",
+  "description": "Default configurations for eslint, jscs, jshint using Airbnb style guide",
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "author": "JW Garrison",
+  "license": "MIT"
+}
