@@ -31,7 +31,7 @@ const expected = [
 const logger = (is, o) => {
   is.forEach((i, idx) => {
     console.log('------------------------------');
-    console.log(`${idx + 1}) allAnagrams(${i})`);
+    console.log(`${idx + 1}) allAnagrams('${i}')`);
     console.log(' ');
     console.log(`INPUT: ${i}`);
     console.log('EXPECTED: ', o[idx]);
