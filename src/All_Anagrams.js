@@ -1,13 +1,13 @@
 const allAnagrams = (str) => {
   const anagrams = {};
 
-  (function find(acc = '', src = str) {
+  (function findAnagrams(acc = '', src = str) {
     if (!src.length) anagrams[acc] = true;
 
     [...src].forEach((curr, i) => {
       const newAcc = acc + curr;
       const newSrc = src.slice(0, i) + src.slice(i + 1);
-      find(newAcc, newSrc);
+      findAnagrams(newAcc, newSrc);
     });
   }());
 
