@@ -1,3 +1,3 @@
 # Problems!
 
-...a lot of them!
+1) All Anagrams
