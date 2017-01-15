@@ -1,3 +1,3 @@
 # Problems!
 
-1) All Anagrams
+ 1. All Anagrams
