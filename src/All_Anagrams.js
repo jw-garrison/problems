@@ -14,26 +14,6 @@ const allAnagrams = (str) => {
   return Object.keys(anagrams);
 };
 
-
-/* Recursive routine broken down
-
-letters.forEach((char, index) => {
-  const anagram = char;
-  const remaining = str.slice(0, index) + str.slice(index + 1);
-  const remainingLetter = remaining.split('');
-  remainingLetter.forEach((char2, index2, array) => {
-    const anagram2 = anagram + char2;
-    const remaining2 = array.join('').slice(0, index2) + array.slice(index2 + 1);
-    const remainingLetter2 = remaining2.split('');
-    remainingLetter2.forEach((char3, index3, array3) => {
-      const anagram3 = anagram2 + char3;
-      anagrams.push(anagram3);
-    });
-  });
-});
-
-*/
-
 const inputs = [
   'a',
   'abc',

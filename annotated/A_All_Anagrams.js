@@ -64,3 +64,28 @@ const allAnagrams = (str) => {
 };
 
 allAnagrams();
+
+
+/* Recursive routine broken down
+Notice we have to do the same thing over and over again... recursion!
+
+[...src1].forEach((cur1, idx1) => {
+  const newAcc1 = '' + cur1;
+  const newSrc1 = src1.slice(0, idx1) + src1.slice(idx1 + 1);
+  [...newSrc1].forEach((cur2, idx2) => {
+    const newAcc2 = newAcc1 + cur2;
+    const newSrc2 = newSrc1.slice(0, idx2) + newSrc1.slice(idx2 + 1);
+    [...newSrc2].forEach((cur3, idx3) => {
+      const newAcc3 = newAcc2 + cur3;
+      const newSrc3 = newSrc2.slice(0, idx3) + newSrc2.slice(idx3 + 1);
+      [...newSrc3].forEach((cur4, indx4) => {
+
+      })
+      .
+      .
+      so on and so forth until we have an anagram
+    });
+  });
+});
+
+*/
